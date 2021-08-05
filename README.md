@@ -1,2 +1,2 @@
 # mobx-project
-Readme
+Readme about this project
