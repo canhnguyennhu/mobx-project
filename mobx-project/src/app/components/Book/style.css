@@ -1,0 +1,61 @@
+.book-container {
+	height: 300px;
+	width: 400px;
+	background-color: #ECF0F1;
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	border: 1px solid #007185;
+	border-radius: 3px;
+}
+
+.icon-close {
+	float: right;
+}
+
+.icon-close:hover { 
+	cursor: pointer;
+}
+ 
+.book-header {
+	height: 40px;
+	padding: 20px 20px 0 20px;
+}
+
+.title {
+	float: left;
+}
+
+.label {
+	margin-right: 10px;
+	flex: 0;
+	min-width: 100px;
+}
+
+.input-field {
+	height: 25px;
+	line-height: 25px;
+	flex: 1;
+	border-radius: 2px;
+	border: 1px solid #007185;
+}
+
+.book-footer {
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.book-field {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 20px;
+
+}
+
+.select {
+	height: 30px;
+}
+
+.btn-primary {
+
+}

@@ -1,3 +1,22 @@
 .body-container {
 	flex: 1;
 }
+
+.main-bar {
+	height: 50px;
+	/* line-height: 50px; */
+	padding: 0 20px;
+}
+
+.btn {
+	float: right;
+	height: 40px;
+	width: auto;
+	padding: 5px 20px;
+	border-radius: 3px;
+	background-color: antiquewhite;
+	font-size: 13px;
+	font-weight: 500;
+	min-width: 130px;
+}
+.btn:hover { background: rgba(255, 255, 255, 0.8)}

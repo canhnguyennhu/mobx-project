@@ -3,7 +3,8 @@ import data from "./dummy/data.json";
 
 export default class BooksStore {
 	
-	books = {}
+	books = {};
+	openingNewBook = false;
 
 	initBooks () {
 		this.books = data;
@@ -12,9 +13,10 @@ export default class BooksStore {
 	constructor() {
 		makeObservable(this, {
 			books: observable,
+			openingNewBook: observable,
 			updateBook: action,
+			setOpeningNewBook: action,
 			fetchAll: computed,
-			// fetchByType: computed,
 		});
 		this.initBooks();
 	}
@@ -27,7 +29,12 @@ export default class BooksStore {
 		return fetchArr;
 	}
 
+	setOpeningNewBook (value) {
+		this.openingNewBook = value;
+	}
+
 	updateBook (book, type) {
-		// this.data = data;
+		console.log(type, book)
+		this.books[type] && this.books[type].push(book);
 	}
 }

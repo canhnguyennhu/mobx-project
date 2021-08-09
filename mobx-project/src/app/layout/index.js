@@ -4,10 +4,12 @@ import { getInstanceStores } from '../stores/Store'
 import Header from "./components/Header";
 import LeftMenu from "./components/LeftMenu";
 import MainBody from "./components/MainBody";
+import Book from "../components/Book";
 import "./style.css"
 
 const MainLayout = observer( ({ children }) =>  {
-
+	const { bookStore } = getInstanceStores();
+	console.log("bookStore.openingNewBook:", bookStore.openingNewBook)
 	return (
 			<div className="main-layout">
 				<Header/>
@@ -17,6 +19,9 @@ const MainLayout = observer( ({ children }) =>  {
 						{children}
 					</MainBody>
 				</div>
+				{
+					bookStore.openingNewBook && <Book></Book>
+				}
 			</div>
 	);
 })

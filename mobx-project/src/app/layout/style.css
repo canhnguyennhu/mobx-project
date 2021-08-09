@@ -1,6 +1,7 @@
 .main-layout {
 	color: rgb(14, 8, 8);
 	height: 100vh;
+	position: relative;
 }
 
 .main-container {

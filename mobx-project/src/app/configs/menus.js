@@ -1,22 +1,19 @@
 export default {
 	left: [
 		{
-			name: "Home",
-			route: "/home",
-			
-		},
-		{
 			name: "Economy",
 			route: "/economy",
+			type: "economy"
 		},
 		{
 			name: "Science",
 			route: "/science",
-			className: "link"
+			type: "science"
 		},
 		{
 			name: "Education",
 			route: "/education",
+			type: "education"
 		}
 	]
 }
