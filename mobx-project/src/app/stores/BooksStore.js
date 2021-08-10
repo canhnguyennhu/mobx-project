@@ -34,7 +34,6 @@ export default class BooksStore {
 	}
 
 	updateBook (book, type) {
-		console.log(type, book)
 		this.books[type] && this.books[type].push(book);
 	}
 }

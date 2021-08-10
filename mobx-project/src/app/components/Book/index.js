@@ -7,7 +7,7 @@ import "./style.css";
 const Book = observer( ({}) => {
 	const [name, setName] = useState();
 	const [author, setAuthor] = useState();
-	const [type, setType] = useState();
+	const [type, setType] = useState("economy");
 
 	const { bookStore } = getInstanceStores();
 
@@ -48,6 +48,7 @@ const Book = observer( ({}) => {
 			<div className="book-field">
 				<span className="label">Book Type</span>
 				<select className="input-field select" onChange={onChangeBookType}>
+					<option disabled hidden value=''></option>
 					{
 						menus.left.map(item => (
 							<option value={item.type}>{item.name}</option>

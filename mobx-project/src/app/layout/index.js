@@ -9,7 +9,6 @@ import "./style.css"
 
 const MainLayout = observer( ({ children }) =>  {
 	const { bookStore } = getInstanceStores();
-	console.log("bookStore.openingNewBook:", bookStore.openingNewBook)
 	return (
 			<div className="main-layout">
 				<Header/>
